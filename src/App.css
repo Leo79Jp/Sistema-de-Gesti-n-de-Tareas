@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+justify-content: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.li-tareas{
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    min-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+.input-tareas{
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  min-width: 350px;
+}
+.btn-eliminar {
+  padding: 7px 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  &{
+    background-color: #a74128;
+    &:hover {
+      background-color: #ac5039;
+    }
+  }
+}
+.btn-agregar {
+  padding: 7px 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  &{
+    background-color: #28a745;
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}
+.div-agregar{
+  width: 100%;
+  margin: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-tareas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 650px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  
+}
+.div-agregar-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
