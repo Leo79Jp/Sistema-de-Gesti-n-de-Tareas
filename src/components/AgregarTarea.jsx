@@ -1,19 +1,17 @@
 import React, { useState } from 'react'
 
-export default function AgregarTarea({listaTarea}) {
+export default function AgregarTarea({addTarea}) {
   const [nuevaTarea, setNuevaTarea] = useState('')
 
   const handleChange = (event) => {
     setNuevaTarea(event.target.value)
   }
   const agregarTarea = () => {
-    listaTarea.push(nuevaTarea)
     setNuevaTarea('')
-    console.log(listaTarea);
+    addTarea({nuevaTarea})
   }
-
-
   
+
   return (
     <div className="div-agregar">
       <h2>Agregar Tarea</h2>

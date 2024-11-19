@@ -3,27 +3,40 @@
   margin: 0 auto;
   padding: 2rem;
   display: flex;
-justify-content: center;
+  justify-content: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .li-tareas{
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+  cursor: pointer;
+}
+.tachada{
+  text-decoration:line-through;
+  background-color: #f5b20a;
+}
+.noTachada{
+  background-color: #f9f9f9;
+
+}
+.div-tareas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  min-width: 550px;
+}
+.input-tareas{
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
-    min-width: 550px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: move;
-}
-.input-tareas{
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  margin-right: 10px;
-  min-width: 350px;
+    margin-right: 10px;
+    min-width: 350px;
 }
 .btn-eliminar {
   padding: 7px 12px;
